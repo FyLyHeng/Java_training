@@ -19,5 +19,17 @@ public class Main {
         System.out.println("============copy==============");
         cons_test myCopy=new cons_test(myCon);
         System.out.println(myCopy);
+
+
+        //call overloading constructor
+        System.out.println("===========overloading con=======");
+        ConsOverloading overloading = new ConsOverloading(10,20,30);
+        ConsOverloading overloading1 =new ConsOverloading(5);
+        ConsOverloading overloading2=new ConsOverloading();
+
+        double value;
+
+        value = overloading.valume();
+        System.out.println("invoked con(d,d,d) "+value);
     }
 }
