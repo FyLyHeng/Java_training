@@ -1,4 +1,4 @@
-package DataType_Test;
+package StringDataType;
 
 public class String_lang {
     public static void main(String[] args) {

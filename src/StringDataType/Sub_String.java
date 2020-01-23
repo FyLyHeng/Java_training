@@ -1,4 +1,4 @@
-package DataType_Test;
+package StringDataType;
 
 public class Sub_String {
     public static void main(String[] args) {
