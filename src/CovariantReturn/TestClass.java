@@ -4,7 +4,10 @@ public class TestClass extends SuperClass {
 
 
     /**
-     * this is override getInfo() of SuperClass
+     * this is override getInfo() of SuperClass original method returnType is SuperClass
+     * and we can change returnType (SuperClass) to (TestClass)
+     * using covariant returnType
+     * and
      * @return
      */
     TestClass getInfo(){
