@@ -1,6 +1,9 @@
 package Polymorphisms;
 
 public class General extends CarInfo {
+    General(){
+        super();
+    }
     private String model="Camry";
     private float price=1000;
     private String color="red";

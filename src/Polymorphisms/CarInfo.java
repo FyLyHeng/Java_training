@@ -1,6 +1,10 @@
 package Polymorphisms;
 
-public class CarInfo {
+public class CarInfo<T> {
+
+    CarInfo(){
+
+    }
     private String brand="Toyota";
     private String year="2017";
 
