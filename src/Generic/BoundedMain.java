@@ -10,5 +10,7 @@ public class BoundedMain {
         System.out.println("Find max is : "+BoundedType.maxMin(5.0,2.3,5.9));
 
         System.out.println("Find max is : "+BoundedType.maxMin(3f,2f,5f));
+
+        System.out.println("Find max is : "+BoundedType.maxMin("Hi","Hola","Hello"));
     }
 }

@@ -1,30 +1,30 @@
 package Generic;
 
-public class Generic {
+public class Generic <T>{
+    private T t;
+
+    //constructor
+    public Generic(T t) {
+        this.t = t;
+    }
+
+    //constructor
+    public Generic() {
+
+    }
+
+    public void add(T t){
+        this.t = t;
+    }
+
+    public T getT() {
+        return t;
+    }
 
     /**
-     * GenericMethod
-     * @param inputArray
-     * @param <E>
+     * work like add(T t)
      */
-    public static <E> void printArray(E[] inputArray){
-
-        for (E element : inputArray){
-            System.out.print(element);
-        }
-        System.out.println();
-    }
-
-    public static void main(String[] args) {
-
-        Integer[] integers = {1,3,2,4,5};
-        Double[] doubles = {1.1,2.2,3.3,4.4};
-        Character[] characters = {'H','E','L','L','O'};
-
-
-        System.out.println("invoked Generic method");
-        printArray(integers);
-        printArray(doubles);
-        printArray(characters);
-    }
+//    public void setT(T t) {
+//        this.t = t;
+//    }
 }
