@@ -2,6 +2,12 @@ package SingleTon;
 
 public class Main {
     public static void main(String[] args) {
+
+        /**
+         * create obj of SingleTonClass
+         * getInstance() is method return SingleTonInstance
+         * that SingleTon is Static Class
+         */
         SingleTon ton =  SingleTon.getInstance();
 
 

@@ -1,7 +1,7 @@
 package constructorS;
 
 public class ConsOverloading {
-    double width, hight, depth;
+    private double width, hight, depth;
 
     ConsOverloading(double w, double h, double d) {
         width = w;
