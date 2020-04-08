@@ -42,9 +42,10 @@ public class Main {
 
         /**
          * work with Changing Constructor
+         * this is we call default constructor
          */
 
-        new ChangeConstructor();
+        ChangeConstructor cons = new ChangeConstructor();
 
 
     }

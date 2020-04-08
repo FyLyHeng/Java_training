@@ -9,6 +9,7 @@ public class Main {
 
         StringTokenizer tokenizer = new StringTokenizer("Hello Reader, Token is here"," ");
 
+        //this stringTokenizer is split by " "(space) in socend parameter of StringTokenizer constructor
         while (tokenizer.hasMoreTokens()) {
             System.out.println(tokenizer.nextToken());
         }
@@ -26,7 +27,7 @@ public class Main {
         /**
          * s1 aS  = split to token where a and S
          * b true = each token are contact those character (a,s)
-         * b false = each token through (a,s) mean new token(sub String) will have no a,S in!!!
+         * b false = each token through (a,s) mean new token(sub String) will have no a,S content!!!
          */
         StringTokenizer tokenizer2 = new StringTokenizer("JavaCodeString","aS",true);
 
