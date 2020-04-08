@@ -14,6 +14,8 @@ public class Main {
          * use pointer is Inter1
          * print() is from Sub1
          */
+
+        //this is test git
         Inter1 muin = new Sub1();
         muin.print();
         System.out.println("=========================1");

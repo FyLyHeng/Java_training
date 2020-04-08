@@ -7,6 +7,9 @@ package Interfaces;
  */
 
 public class Sub1 extends Sub {
+
+
+    //override print it will hide print in base class
     @Override
     public void print(){
         System.out.println("print from sub1");
