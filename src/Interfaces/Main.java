@@ -22,6 +22,8 @@ public class Main {
 
 
         /**
+         *
+         * 
          * use pointer VehicleType(base)
          * create obj of class Sub1(child)
          */
