@@ -1,4 +1,6 @@
-package Advanced.array;
+package Advanced.array.service;
+
+import com.sun.istack.internal.NotNull;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -53,7 +55,7 @@ public class RemoveDuplicates {
 
     public static void removeByHashSet(final Integer[] arr){
         final Set<Integer> sets = new HashSet<>();
-        Arrays.sort(arr);
+        //Arrays.sort(arr);
 
         //assign all element arr to temp
         final Integer[] temp = new Integer[arr.length];
@@ -71,9 +73,9 @@ public class RemoveDuplicates {
         }
     }
 
-    public static Integer[] removeByHashSetInt(final Integer[] arr){
-        Arrays.sort(arr);
+    public static Integer[] removeByHashSetInt(@NotNull Integer[] arr){
         final Set<Integer> sets = new HashSet<>();
+        Arrays.sort(arr);
 
         //assign all element arr to temp
         Integer[] temp = new Integer[arr.length];
@@ -86,6 +88,10 @@ public class RemoveDuplicates {
             }
         }
 
-        return temp;
+        //stand for loop through temp
+        arr = new Integer[j];
+        if (j >= 0) System.arraycopy(temp, 0, arr, 0, j);
+
+        return arr;
     }
 }
