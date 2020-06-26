@@ -1,9 +1,6 @@
 package Advanced.string;
 
-import Advanced.string.service.CountMatchesCh;
-import Advanced.string.service.CountOccuranceOfSubString;
-import Advanced.string.service.FindWordOfString;
-import Advanced.string.service.MergeStringArrays;
+import Advanced.string.service.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -36,11 +33,24 @@ public class Main {
 
         String[] arr1 = {"abc", "xyz", "pqr"};
         String[] arr2 = {"abc", "ABC", "PQR"};
-        String[] result = MergeStringArrays.method1(arr1,arr2);
+        String[] result = MergeStringArrays.mergeStringArrays(arr1,arr2);
 
         for (String s:result) {
             System.out.println(s);
         }
+
+        System.out.println("\n===================================");
+        System.out.println("5 ways to reverse a String in Java");
+        StringReverse.reverseWithStringConcat("HiJava");
+        StringReverse.reverseWithStringBuilder("HiJava");
+        StringReverse.reverseWithStringBuilderBuiltinMethod("HiJava");
+
+
+        System.out.println("\n===================================");
+        System.out.println("Java Program To Reverse Each Word Of A String.");
+        ReverseEachWord.reversEachWord("Hi Java");
+
+
     }
 
 }
